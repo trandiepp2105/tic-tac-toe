@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap");
+
+.header {
+  height: 60px;
+  padding: 10px;
+  background-color: #1f2031;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.header .leftSide {
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.gameBrand {
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  color: white;
+}
+
+.leftSide .wrapperMenuIcon {
+  height: 100%;
+  box-sizing: border-box;
+  padding: 10%;
+  cursor: pointer;
+}
+
+.icon {
+  height: 100%;
+  width: 100%;
+  color: white;
+  box-sizing: border-box;
+}
+
+.header .rightSide {
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  gap: 20px;
+}
+
+.rightSide .wrapperUserIcon {
+  height: 100%;
+  border: 1px solid white;
+  border-radius: 50%;
+  box-sizing: border-box;
+  padding: 20%;
+  display: block;
+  cursor: pointer;
+}
