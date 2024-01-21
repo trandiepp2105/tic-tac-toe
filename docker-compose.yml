@@ -1,7 +1,9 @@
-version: '3.8'
+version: '3.9'
 services:
   tic-tac-toe:
+    container_name: react_app
     build: .
+    command: sh -c "npm start"
     ports:
       - "3000:3000"
     environment:
