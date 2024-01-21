@@ -3,6 +3,7 @@ import "./HomePage.css";
 import AspectRatio from "react-aspect-ratio/dist/react-15.6";
 import classNames from "classnames";
 import Button from "../../components/button/Button";
+import VictoryPopup from "../../components/victory-popup/VictoryPopup";
 const HomePage = () => {
   const updateSize = () => {
     const wrapperPlayGround = document.querySelector(".wrapper-play-ground");
@@ -45,13 +46,18 @@ const HomePage = () => {
     setWinningRel(initWinningRel);
   };
 
+  const [showPopup, setShowPopup] = useState(false);
+
+  const handlePlayerWin = () => {
+    setShowPopup(true);
+  };
   return (
     <div className="home-page">
       {/* <AspectRatio
         ratio={"2/1"}
         style={{ maxWidth: "80%", position: "relative", margin: "auto" }}
       >
-        
+
       </AspectRatio> */}
       <div className="play-ground-ratio">
         <div className="wrapper-play-ground">
@@ -96,11 +102,18 @@ const HomePage = () => {
               });
             })}
           </div>
-          {/* <div className="winning-notify">
-            <div className="overlay">
-              <div className="notify-content"></div>
+          {showPopup && (
+            <div className="winning-notify">
+              <div className="overlay">
+                <VictoryPopup
+                  show={false}
+                  stars={4}
+                  handleHomeBtn={() => setShowPopup(false)}
+                  handleReMatchBtn={() => setShowPopup(false)}
+                />
+              </div>
             </div>
-          </div> */}
+          )}
         </div>
       </div>
     </div>

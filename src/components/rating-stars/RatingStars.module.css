@@ -1,0 +1,11 @@
+.container {
+  display: flex;
+  gap: 10px;
+  width: fit-content;
+}
+.star {
+  font-size: 2.5rem;
+  color: yellow;
+  padding: 0;
+  margin: 0;
+}
