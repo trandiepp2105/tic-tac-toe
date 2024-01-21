@@ -1,6 +1,5 @@
 import { React, useEffect, useState } from "react";
 import "./HomePage.css";
-import AspectRatio from "react-aspect-ratio/dist/react-15.6";
 import classNames from "classnames";
 import Button from "../../components/button/Button";
 import VictoryPopup from "../../components/victory-popup/VictoryPopup";
@@ -48,9 +47,9 @@ const HomePage = () => {
 
   const [showPopup, setShowPopup] = useState(false);
 
-  const handlePlayerWin = () => {
-    setShowPopup(true);
-  };
+  // const handlePlayerWin = () => {
+  //   setShowPopup(true);
+  // };
   return (
     <div className="home-page">
       {/* <AspectRatio

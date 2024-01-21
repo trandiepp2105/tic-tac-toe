@@ -1,4 +1,4 @@
-import { React, useState } from "react";
+import { React } from "react";
 import styles from "./RatingStars.module.css";
 import { FaStar } from "react-icons/fa";
 import { CiStar } from "react-icons/ci";

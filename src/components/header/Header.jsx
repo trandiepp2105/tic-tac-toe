@@ -1,10 +1,8 @@
 import React from "react";
 import styles from "./Header.module.css";
-import classNames from "classnames";
 import { AspectRatio } from "react-aspect-ratio";
 import Button from "../button/Button";
-//Open menu icon
-import { AiOutlineMenuUnfold } from "react-icons/ai";
+
 //Close menu icon
 import { RiMenuFoldFill } from "react-icons/ri";
 //User icon
